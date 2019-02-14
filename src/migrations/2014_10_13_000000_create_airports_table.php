@@ -25,7 +25,7 @@ class CreateAirportsTable extends Migration
             $table->string('ident', 10)
                 ->comment('airport identity');
             $table->string('type', 20);
-            $table->string('name', 75);
+            $table->string('name', 175);
             $table->double('latitude_deg', 16, 10)
                 ->nullable(false)
                 ->default(0);
@@ -36,14 +36,14 @@ class CreateAirportsTable extends Migration
             $table->string('continent', 5);
             $table->string('iso_country', 5);
             $table->string('iso_region', 10);
-            $table->string('municipality', 15);
+            $table->string('municipality', 75);
             $table->string('scheduled_service', 5);
             $table->string('gps_code', 5);
             $table->string('iata_code', 5);
             $table->string('local_code', 20);
             $table->string('home_link');
             $table->string('wikipedia_link');
-            $table->string('keywords');
+            $table->text('keywords');
             $table->timestamps();
         });
     }

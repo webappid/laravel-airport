@@ -66,257 +66,257 @@ class AirportParam
     }
     
     /**
-     * @return mixed
+     * @return string|null
      */
-    public function getType()
+    public function getType(): ?string
     {
         return $this->type;
     }
     
     /**
-     * @param mixed $type
+     * @param string $type
      */
-    public function setType($type): void
+    public function setType(string $type): void
     {
         $this->type = $type;
     }
     
     /**
-     * @return mixed
+     * @return string|null
      */
-    public function getName()
+    public function getName(): ?string
     {
         return $this->name;
     }
     
     /**
-     * @param mixed $name
+     * @param string $name
      */
-    public function setName($name): void
+    public function setName(string $name): void
     {
         $this->name = $name;
     }
     
     /**
-     * @return mixed
+     * @return float
      */
-    public function getLatitudeDeg()
+    public function getLatitudeDeg(): float
     {
         return $this->latitude_deg;
     }
     
     /**
-     * @param mixed $latitude_deg
+     * @param float $latitude_deg
      */
-    public function setLatitudeDeg($latitude_deg): void
+    public function setLatitudeDeg(float $latitude_deg): void
     {
         $this->latitude_deg = $latitude_deg;
     }
     
     /**
-     * @return mixed
+     * @return float|null
      */
-    public function getLongitudeDeg()
+    public function getLongitudeDeg(): ?float
     {
         return $this->longitude_deg;
     }
     
     /**
-     * @param mixed $longitude_deg
+     * @param float $longitude_deg
      */
-    public function setLongitudeDeg($longitude_deg): void
+    public function setLongitudeDeg(float $longitude_deg): void
     {
         $this->longitude_deg = $longitude_deg;
     }
     
     /**
-     * @return mixed
+     * @return int|null
      */
-    public function getElevationFt()
+    public function getElevationFt(): ?int
     {
         return $this->elevation_ft;
     }
     
     /**
-     * @param mixed $elevation_ft
+     * @param int $elevation_ft
      */
-    public function setElevationFt($elevation_ft): void
+    public function setElevationFt(int $elevation_ft): void
     {
         $this->elevation_ft = $elevation_ft;
     }
     
     /**
-     * @return mixed
+     * @return string|null
      */
-    public function getContinent()
+    public function getContinent(): ?string
     {
         return $this->continent;
     }
     
     /**
-     * @param mixed $continent
+     * @param string $continent
      */
-    public function setContinent($continent): void
+    public function setContinent(string $continent): void
     {
         $this->continent = $continent;
     }
     
     /**
-     * @return mixed
+     * @return string|null
      */
-    public function getIsoCountry()
+    public function getIsoCountry(): ?string
     {
         return $this->iso_country;
     }
     
     /**
-     * @param mixed $iso_country
+     * @param string $iso_country
      */
-    public function setIsoCountry($iso_country): void
+    public function setIsoCountry(string $iso_country): void
     {
         $this->iso_country = $iso_country;
     }
     
     /**
-     * @return mixed
+     * @return string|null
      */
-    public function getIsoRegion()
+    public function getIsoRegion(): ?string
     {
         return $this->iso_region;
     }
     
     /**
-     * @param mixed $iso_region
+     * @param string $iso_region
      */
-    public function setIsoRegion($iso_region): void
+    public function setIsoRegion(string $iso_region): void
     {
         $this->iso_region = $iso_region;
     }
     
     /**
-     * @return mixed
+     * @return string|null
      */
-    public function getMunicipality()
+    public function getMunicipality(): ?string
     {
         return $this->municipality;
     }
     
     /**
-     * @param mixed $municipality
+     * @param string $municipality
      */
-    public function setMunicipality($municipality): void
+    public function setMunicipality(string $municipality): void
     {
         $this->municipality = $municipality;
     }
     
     /**
-     * @return mixed
+     * @return string|null
      */
-    public function getScheduledService()
+    public function getScheduledService(): ?string
     {
         return $this->scheduled_service;
     }
     
     /**
-     * @param mixed $scheduled_service
+     * @param string $scheduled_service
      */
-    public function setScheduledService($scheduled_service): void
+    public function setScheduledService(string $scheduled_service): void
     {
         $this->scheduled_service = $scheduled_service;
     }
     
     /**
-     * @return mixed
+     * @return string|null
      */
-    public function getGpsCode()
+    public function getGpsCode(): ?string
     {
         return $this->gps_code;
     }
     
     /**
-     * @param mixed $gps_code
+     * @param string $gps_code
      */
-    public function setGpsCode($gps_code): void
+    public function setGpsCode(string $gps_code): void
     {
         $this->gps_code = $gps_code;
     }
     
     /**
-     * @return mixed
+     * @return string|null
      */
-    public function getIataCode()
+    public function getIataCode(): ?string
     {
         return $this->iata_code;
     }
     
     /**
-     * @param mixed $iata_code
+     * @param string $iata_code
      */
-    public function setIataCode($iata_code): void
+    public function setIataCode(string $iata_code): void
     {
         $this->iata_code = $iata_code;
     }
     
     /**
-     * @return mixed
+     * @return string|null
      */
-    public function getLocalCode()
+    public function getLocalCode():?string
     {
         return $this->local_code;
     }
     
     /**
-     * @param mixed $local_code
+     * @param string $local_code
      */
-    public function setLocalCode($local_code): void
+    public function setLocalCode(string $local_code): void
     {
         $this->local_code = $local_code;
     }
     
     /**
-     * @return mixed
+     * @return string|null
      */
-    public function getHomeLink()
+    public function getHomeLink():?string
     {
         return $this->home_link;
     }
     
     /**
-     * @param mixed $home_link
+     * @param string $home_link
      */
-    public function setHomeLink($home_link): void
+    public function setHomeLink(string $home_link): void
     {
         $this->home_link = $home_link;
     }
     
     /**
-     * @return mixed
+     * @return string|null
      */
-    public function getWikipediaLink()
+    public function getWikipediaLink():?string
     {
         return $this->wikipedia_link;
     }
     
     /**
-     * @param mixed $wikipedia_link
+     * @param string $wikipedia_link
      */
-    public function setWikipediaLink($wikipedia_link): void
+    public function setWikipediaLink(string $wikipedia_link): void
     {
         $this->wikipedia_link = $wikipedia_link;
     }
     
     /**
-     * @return mixed
+     * @return string|null
      */
-    public function getKeywords()
+    public function getKeywords():?string
     {
         return $this->keywords;
     }
     
     /**
-     * @param mixed $keywords
+     * @param string $keywords
      */
-    public function setKeywords($keywords): void
+    public function setKeywords(string $keywords): void
     {
         $this->keywords = $keywords;
     }

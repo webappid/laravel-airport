@@ -29,6 +29,9 @@ class AirportSeeder extends Seeder
                 while (($row = fgetcsv($handle, 1000, $delimiter)) !== false) {
                     $data = array_combine($header, $row);
                     if ($data['id'] != 'id') {
+                        if ($data['elevation_ft'] == '') {
+                            $data['elevation_ft'] = 0;
+                        }
                         $airportParam->setId($data['id']);
                         $airportParam->setIdent($data['ident']);
                         $airportParam->setType($data['type']);
