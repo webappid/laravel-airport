@@ -111,6 +111,7 @@ class AirportRepository
         return $airport
             ->where('name', 'LIKE', '%' . $q . '%')
             ->orWhere('local_code', 'LIKE', '%' . $q . '%')
+            ->orWhere('type', 'LIKE', '%_airport')
             ->paginate($paginate);
     }
 }
