@@ -6,7 +6,7 @@ how to install:
 1. install via composer `composer require webappid/laravel-airport`
 2. seeding the data `webappid:airport:seed`
 
-example get airplane by country :
+example get airport by country :
 
 ```
 <?php
