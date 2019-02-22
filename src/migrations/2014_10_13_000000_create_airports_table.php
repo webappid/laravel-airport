@@ -23,7 +23,8 @@ class CreateAirportsTable extends Migration
             $table->increments('id')
                 ->comment('table to store airports data');
             $table->string('ident', 10)
-                ->comment('airport identity');
+                ->comment('airport identity')
+                ->unique();
             $table->string('type', 20);
             $table->string('name', 175);
             $table->double('latitude_deg', 16, 10)

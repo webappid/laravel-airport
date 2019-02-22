@@ -10,6 +10,7 @@ namespace WebAppId\Airport\Services;
 
 
 use Illuminate\Container\Container;
+use Illuminate\Database\Eloquent\Collection;
 use WebAppId\Airport\Repositories\AirportRepository;
 
 
@@ -34,5 +35,15 @@ class AirportService
     public function getAirportLike(string $q, AirportRepository $airportRepository): ?object
     {
         return $this->container->call([$airportRepository, 'getAirportLike'], ['q' => $q]);
+    }
+    
+    /**
+     * @param string $countryCode
+     * @param AirportRepository $airportRepository
+     * @return Collection|null
+     */
+    public function getAllAirportByCountry(string $countryCode, AirportRepository $airportRepository): ?Collection
+    {
+        return $this->container->call([$airportRepository, 'getAllAirportByCountry'], ['countryCode' => $countryCode]);
     }
 }

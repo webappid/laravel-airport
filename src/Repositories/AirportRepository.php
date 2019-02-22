@@ -9,6 +9,7 @@
 namespace WebAppId\Airport\Repositories;
 
 
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\QueryException;
 use WebAppId\Airport\Models\Airport;
 use WebAppId\Airport\Services\Params\AirportParam;
@@ -48,7 +49,6 @@ class AirportRepository
             $airport->save();
             return $airport;
         } catch (QueryException $queryException) {
-            dd($queryException);
             report($queryException);
             return null;
         }
@@ -110,8 +110,23 @@ class AirportRepository
     {
         return $airport
             ->where('name', 'LIKE', '%' . $q . '%')
-            ->orWhere('local_code', 'LIKE', '%' . $q . '%')
-            ->orWhere('type', 'LIKE', '%_airport')
+            ->where('local_code', 'LIKE', '%' . $q . '%')
+            ->where('type', 'LIKE', '%_airport')
+            ->where('scheduled_service','yes')
             ->paginate($paginate);
+    }
+    
+    /**
+     * @param string $countryCode
+     * @param Airport $airport
+     * @return object|null
+     */
+    public function getAllAirportByCountry(string $countryCode, Airport $airport): ?Collection
+    {
+        return $airport
+            ->where('iso_country', $countryCode)
+            ->where('type', 'LIKE', '%_airport')
+            ->where('scheduled_service','yes')
+            ->get();
     }
 }
