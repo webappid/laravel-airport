@@ -112,7 +112,7 @@ class AirportRepository
             ->where('name', 'LIKE', '%' . $q . '%')
             ->where('local_code', 'LIKE', '%' . $q . '%')
             ->where('type', 'LIKE', '%_airport')
-            ->where('scheduled_service','yes')
+            ->where('scheduled_service', 'yes')
             ->paginate($paginate);
     }
     
@@ -126,7 +126,36 @@ class AirportRepository
         return $airport
             ->where('iso_country', $countryCode)
             ->where('type', 'LIKE', '%_airport')
-            ->where('scheduled_service','yes')
+            ->where('scheduled_service', 'yes')
             ->get();
+    }
+    
+    /**
+     * @param string $countryCode
+     * @param Airport $airport
+     * @return int
+     */
+    public function getAllAirportByCountryCount(string $countryCode, Airport $airport): int
+    {
+        return $airport
+            ->where('iso_country', $countryCode)
+            ->where('type', 'LIKE', '%_airport')
+            ->where('scheduled_service', 'yes')
+            ->count();
+    }
+    
+    /**
+     * @param string $q
+     * @param Airport $airport
+     * @return object
+     */
+    public function getAirportLikeCount(string $q, Airport $airport): int
+    {
+        return $airport
+            ->where('name', 'LIKE', '%' . $q . '%')
+            ->where('local_code', 'LIKE', '%' . $q . '%')
+            ->where('type', 'LIKE', '%_airport')
+            ->where('scheduled_service', 'yes')
+            ->count();
     }
 }

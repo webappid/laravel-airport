@@ -145,7 +145,11 @@ class AirportRepositoryTest extends TestCase
         
         $randomIndexKey = $this->getFaker()->numberBetween(0, count($key) - 1);
         
-        $result = $this->getContainer()->call([$this->airportRepository(), 'getAirportLikePaging'], ['q' => $key[$randomIndexKey]]);
+        $count = $this->getContainer()->call([$this->airportRepository(),'getAirportLikeCount'], ['q' => $key[$randomIndexKey]]);
+    
+        self::assertGreaterThanOrEqual(1, $count);
+        
+        $result = $this->getContainer()->call([$this->airportRepository(), 'getAirportLike'], ['q' => $key[$randomIndexKey]]);
         
         self::assertGreaterThanOrEqual(1, count($result));
     }
@@ -159,6 +163,10 @@ class AirportRepositoryTest extends TestCase
         
         $result = $this->getContainer()->call([$this->airportRepository(), 'getAllAirportByCountry'], ['countryCode' => $key[$randomIndexKey]]);
         
+        $count = $this->getContainer()->call([$this->airportRepository(), 'getAllAirportByCountryCount'], ['countryCode' => $key[$randomIndexKey]]);
+        
         self::assertGreaterThanOrEqual(1, count($result));
+        
+        self::assertGreaterThanOrEqual(1, $count);
     }
 }
