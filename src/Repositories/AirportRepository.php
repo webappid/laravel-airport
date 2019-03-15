@@ -147,7 +147,7 @@ class AirportRepository
     /**
      * @param string $q
      * @param Airport $airport
-     * @return object
+     * @return int
      */
     public function getAirportLikeCount(string $q, Airport $airport): int
     {
@@ -157,5 +157,15 @@ class AirportRepository
             ->where('type', 'LIKE', '%_airport')
             ->where('scheduled_service', 'yes')
             ->count();
+    }
+    
+    /**
+     * @param string $iataCode
+     * @param Airport $airport
+     * @return Airport|null
+     */
+    public function getAirportByIataCode(string $iataCode, Airport $airport): ?Airport
+    {
+        return $airport->where('iata_code', $iataCode)->first();
     }
 }

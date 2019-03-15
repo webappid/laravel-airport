@@ -169,4 +169,14 @@ class AirportRepositoryTest extends TestCase
         
         self::assertGreaterThanOrEqual(1, $count);
     }
+    
+    public function testGetAirportByIataCode(){
+        $key = ['HIR','MUA','INU','MJR','CCT','BUA','CMU','DAU','GKA','GUR','PNP','HKN','KMA','KVG','MAG','HGU','MDU','MAS','LAE','POM','RAB','VAI','WBM','WWK','LLK','TGV','ROU','JAM','UAK','GOH'];
+    
+        $randomIndexKey = $this->getFaker()->numberBetween(0, count($key) - 1);
+        
+        $result =  $this->getContainer()->call([$this->airportRepository(), 'getAirportByIataCode'],['iataCode' => $key[$randomIndexKey]]);
+        
+        self::assertNotEquals(null, $result);
+    }
 }
