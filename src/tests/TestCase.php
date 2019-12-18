@@ -22,7 +22,7 @@ class TestCase extends BaseTestCase
     /**
      * Set up the test
      */
-    protected function setUp()
+    protected function setUp():void
     {
         parent::setUp();
         
@@ -49,7 +49,7 @@ class TestCase extends BaseTestCase
         ];
     }
     
-    public function tearDown()
+    public function tearDown():void
     {
         Artisan::call('migrate:reset');
         parent::tearDown();
