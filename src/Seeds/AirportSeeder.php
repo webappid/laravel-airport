@@ -29,9 +29,13 @@ class AirportSeeder extends Seeder
                 while (($row = fgetcsv($handle, 1000, $delimiter)) !== false) {
                     $data = array_combine($header, $row);
                     if ($data['id'] != 'id') {
+
                         if ($data['elevation_ft'] == '') {
                             $data['elevation_ft'] = 0;
                         }
+
+                        $result = $this->container->call([$airportRepository,'getAirportByIdent'],['ident' => $data['ident']]);
+
                         $airportParam->setId($data['id']);
                         $airportParam->setIdent($data['ident']);
                         $airportParam->setType($data['type']);
@@ -50,7 +54,13 @@ class AirportSeeder extends Seeder
                         $airportParam->setHomeLink($data['home_link']);
                         $airportParam->setWikipediaLink($data['wikipedia_link']);
                         $airportParam->setKeywords($data['keywords']);
-                        $this->container->call([$airportRepository, 'addAirport'], ['airportParam' => $airportParam]);
+
+                        if($result == null) {
+
+                            $this->container->call([$airportRepository, 'addAirport'], ['airportParam' => $airportParam]);
+                        }else{
+                            $this->container->call([$airportRepository,'updateAirportByIdent'],['ident' => $data['ident'], 'airportParam' => $airportParam]);
+                        }
                     }
                 }
                 DB::commit();
