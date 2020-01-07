@@ -12,6 +12,7 @@ namespace WebAppId\Airport\Services;
 use Illuminate\Container\Container;
 use Illuminate\Database\Eloquent\Collection;
 use WebAppId\Airport\Repositories\AirportRepository;
+use WebAppId\Airport\Response\AirportListResponse;
 
 
 /**
@@ -26,15 +27,16 @@ class AirportService
     {
         return $this->container = $container;
     }
-    
+
     /**
      * @param string $q
      * @param AirportRepository $airportRepository
-     * @return object|null
+     * @param bool $status
+     * @return AirportListResponse|null
      */
-    public function getAirportLike(string $q, AirportRepository $airportRepository): ?object
+    public function getAirportLike(string $q, AirportRepository $airportRepository, bool $status = true): ?AirportListResponse
     {
-        return $this->container->call([$airportRepository, 'getAirportLike'], ['q' => $q]);
+        return $this->container->call([$airportRepository, 'getAirportLike'], ['q' => $q, 'status' => $status]);
     }
     
     /**

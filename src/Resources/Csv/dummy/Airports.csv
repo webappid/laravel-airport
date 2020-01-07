@@ -1,0 +1,157 @@
+"id","ident","type","name","latitude_deg","longitude_deg","elevation_ft","continent","iso_country","iso_region","municipality","scheduled_service","gps_code","iata_code","local_code","home_link","wikipedia_link","keywords"
+46597,"ID-0016","heliport","Inna GBB Helipad",-8.67694444444,115.265,,"AS","ID","ID-BA",,"no",,,,,,
+309298,"ID-0017","large_airport","Sungai Siring International Airport",-0.373611,117.255556,82,"AS","ID","ID-KI","Samarinda","yes",,,,"http://www.proyek.dishubprovkaltim.info/?pro=1","http://en.wikipedia.org/wiki/Samarinda_International_Airport","Sungai Siring Airport, فرودگاه سیرینگ"
+316780,"ID-0018","closed","Selaru Airstrip",-8.256,130.842,20,"AS","ID","ID-MA","Selaru Island","no",,,,,,"Lingat"
+302358,"ID-0019","heliport","Paiton Power Helipad",-7.7169054,113.597366,5,"AS","ID","ID-JI","Bhinar","no",,,"PRO",,,
+302359,"ID-0020","heliport","Karyadibya Helipad",-7.76384709931,112.737796605,,"AS","ID","ID-JI","Purwosari","no",,,,,,
+302360,"ID-0021","heliport","Pandaan Helipad",-7.7683326,112.7391373,,"AS","ID","ID-JI","Purwosari","no",,,"UNK",,,
+310313,"ID-0044","small_airport","Derapos Airstrip",-2.9737,137.2234,433,"AS","ID","ID-PA","Derapos","no",,,"DEP",,,"WX68"
+310319,"ID-0045","small_airport","Dou Airstrip",-3.2625,138.1484,299,"AS","ID","ID-PA","Dou","no",,,"DOU",,,
+310321,"ID-0046","small_airport","Doyo Baru Airport",-2.5388,140.4641,385,"AS","ID","ID-PA","Doyo Baru","no",,,"DOB",,,
+310323,"ID-0047","small_airport","Eaopoto Airstrip",-3.9497,136.3383,5900,"AS","ID","ID-PA","Eaopoto","no",,,"EPO",,,"WX75"
+310326,"ID-0048","small_airport","Engkadik Airstrip",0.9797,110.0282,2190,"AS","ID","ID-KB","Engkadik","no",,,"ENK",,,"WX79"
+310330,"ID-0049","small_airport","Eri Airstrip",-2.6308,138.1094,440,"AS","ID","ID-PA","Eri","no",,,"ERI",,,"WX83"
+310332,"ID-0050","small_airport","Faowi Airstrip",-3.2301,137.7262,333,"AS","ID","ID-PA","Faowi","no",,,"FAO",,,"WX84"
+310333,"ID-0051","small_airport","Fef Airport",-0.8103,132.4326,1406,"AS","ID","ID-PB","Fef","no",,,"FEF",,,"WX85"
+310334,"ID-0052","small_airport","Foao Airstrip",-3.066,139.099,241,"AS","ID","ID-PA","Foao","no",,,"FOA",,,"WX86"
+310338,"ID-0053","small_airport","Fruata Airstrip",-2.9858,133.5001,192,"AS","ID","ID-PB","Fruata","no",,,"FRU",,,"WX87"
+310342,"ID-0054","small_airport","Geyarek Airstrip",-4.6504,138.75226,248,"AS","ID","ID-PA","Geyarek","no",,,"GEA",,,"WX92"
+310344,"ID-0055","small_airport","Gilgal Airstrip",0.458,111.0707,108,"AS","ID","ID-KB","Gilgal","no",,,"GIL",,,"WX93"
+310347,"ID-0056","small_airport","Gusimawa Airstrip",-3.0423,133.8779,131,"AS","ID","ID-PB","Gusimawa","no",,,,,,"WX97"
+310349,"ID-0057","small_airport","Haya Airstrip",-2.8156,138.1099,250,"AS","ID","ID-PA","Haya","no",,,"HAY",,,"WX98"
+310455,"ID-0078","small_airport","Keneyan Airstrip",-4.5995,138.3844,449,"AS","ID","ID-PA","Keneyan","no",,,"KEN",,,"WZ41, Kenyem, Kenyam"
+310458,"ID-0079","small_airport","Kerapak Airstrip",0.0939,111.9083,157,"AS","ID","ID-KB","Kerapak","no",,,"KRA",,,"WZ42"
+310463,"ID-0080","small_airport","Kiwi Airstrip",-4.6975,140.722,5260,"AS","ID","ID-PA","Kiwi","no",,,"KIW",,,
+310465,"ID-0081","small_airport","Kobakma Airstrip",-3.66634,139.0592,3195,"AS","ID","ID-PA","Kobakma","no",,,,,,"WZ44"
+310468,"ID-0082","small_airport","Komopa Airstrip",-3.7998,136.4775,5822,"AS","ID","ID-PA","Komopa","no",,,"KOM",,,"WZ45"
+310470,"ID-0083","small_airport","Koropun Airstrip",-4.4792,139.6494,5900,"AS","ID","ID-PA","Koropun","no",,,"KOR",,,"WZ48"
+310474,"ID-0084","small_airport","Kuala Kurun",-1.1277,113.8746,145,"AS","ID","ID-KT","Kuala Kurun","no",,,,,,"WT81"
+310478,"ID-0085","small_airport","Kuala Randau Airstrip",-0.5824,110.4728,240,"AS","ID","ID-KB","Kuala Randau","no",,,,,,"WZ54"
+310480,"ID-0086","small_airport","Kustera Airstrip",-2.7467,137.92,350,"AS","ID","ID-PA","Kustera","no",,,"KUS",,,"WZ57"
+310482,"ID-0087","small_airport","Kwerba Airstrip",-2.6434,138.4087,247,"AS","ID","ID-PA","Kwerba","no",,,"KWE",,,"WZ59"
+310484,"ID-0088","small_airport","Kwijawagi",-4.0256,138.2046,9288,"AS","ID","ID-PA","Kwijawagi","no",,,"KWI",,,"WZ60, Kwiyawagi"
+311868,"ID-0169","small_airport","Bawean Airport",-5.723676,112.679592,93,"AS","ID","ID-JI","Bawean","yes","WARW","BXW",,,"https://en.wikipedia.org/wiki/Bawean_Airport","Harun Thohir Airport"
+311869,"ID-0170","small_airport","Kangean Field",-6.86,115.299,,"AS","ID","ID-JI",,"no",,,,,,
+311870,"ID-0171","small_airport","Aideralma Airstrip",-4.3341,137.8316,2730,"AS","ID","ID-PA","Aideralma","no",,,,,,"WX03"
+311871,"ID-0172","small_airport","Enggano Airport",-5.31,102.16,,"AS","ID","ID-BE",,"no",,,,,,
+41387,"ID-MUF","small_airport","Muting Airport",-7.3147,140.5668,70,"AS","ID","ID-PA","Muting","no",,"MUF",,,,"WW21"
+41388,"ID-NAF","small_airport","Banaina Airport",2.72305011749,117.125999451,60,"AS","ID","ID-KU","Banaina-Borneo Island","no",,"NAF",,,,
+41391,"ID-OBD","small_airport","Obano Airport",-3.9106,136.2306,5800,"AS","ID","ID-PA","Obano-Papua Island","no","WABR","OBD",,,,
+41393,"ID-PPJ","small_airport","Unknown Airport",-0.63333,103.300003,33,"AS","ID","ID-RI","Paritsialing-Sumatra Island","no",,,,,,"Pasanggerahan, Kampungbenteng"
+41394,"ID-PUM","small_airport","Pomala Airport",-4.1810898780823,121.61799621582,88,"AS","ID","ID-SG","Kolaka","no","WAWP","PUM",,,,"WAAP"
+41395,"ID-PWL","small_airport","Purwokerto Airport",-7.46166992188,109.416999817,225,"AS","ID","ID-JT","Purwokerto-Java Island","no","WICP","PWL",,,"http://en.wikipedia.org/wiki/Purwokerto_Airport","WIAP, Wirasaba, Purbalingga"
+41396,"ID-RAQ","small_airport","Sugimanuru Airport",-4.760557,122.569371,132,"AS","ID","ID-SG","Raha-Muna Island","no","WAWR","RAQ",,,"http://en.wikipedia.org/wiki/Sugimanuru_Airport","WAAR"
+41397,"ID-RKI","small_airport","Rokot Airport",-0.949999988079071,100.75,4975,"AS","ID","ID-SB","Rokot-Sumatra Island","no",,"RKI",,,,
+41398,"ID-RTI","small_airport","Roti Airport",-10.484299659729004,123.3740005493164,65,"AS","ID","ID-NT","Roti-Rote Island","no",,"RTI",,,,
+41399,"ID-RUF","small_airport","Yuruf Airport",-3.6333,140.958,1844,"AS","ID","ID-PA","Amgotro","no","WAJE","RUF",,,,
+41400,"ID-RZS","small_airport","Sawan Airport",-8.132780075073242,115.1729965209961,680,"AS","ID","ID-BA","Sawan-Bali Island","no",,"RZS",,,,
+41401,"ID-SAE","small_airport","Sangir Airport",-8.366669654846191,118.33335876464844,175,"AS","ID","ID-NB","Sangir-Simbawa Island","no",,"SAE",,,,
+41402,"ID-TBM","small_airport","Tumbang Samba Airport",-1.4694,113.0833,160,"AS","ID","ID-KT","Tumbang Samba-Borneo Island","yes","WAOW","TBM",,,"http://id.wikipedia.org/wiki/Bandar_Udara_Tumbang_Samba","WRBW"
+41403,"ID-TMY","small_airport","Tiom Airport",-3.9256,138.4555,6931,"AS","ID","ID-PA","Tiom-Papua Island","no",,"TMY","TMI",,,
+3266,"ID-WA19","small_airport","Pagerungan Airport",-6.956610202789999,115.930999756,20,"AS","ID","ID-JI","Pagerungan Island","no",,,,,,"West Java Islands, Pagerungan Besar, Torohhiga"
+3271,"ID-WA98","small_airport","Kobok Airport",1.101889967918396,127.7030029296875,114,"AS","ID","ID-MU","Modjid-Celebes Island","no","WA98",,"WA98",,,
+41408,"ID-ZEG","small_airport","Senggo Airport",-5.6908,139.3502,52,"AS","ID","ID-PA","Senggo-Papua Island","no","WAKQ","ZEG",,,"http://id.wikipedia.org/wiki/Bandar_Udara_Senggo",
+29639,"ID-ZGP","medium_airport","Bilogai-Sugapa Airport",-3.73956,137.031998,7348,"AS","ID","ID-PA","Sugapa-Papua Island","yes","WABV","UGU","ZGP",,,"Zugapa, Bilorai, ZGP"
+319816,"JIO","small_airport","Jos Orno Imsula Airport",-8.13911,127.9075,43,"AS","ID","ID-MA","Tiakur","yes",,"JIO",,,"https://en.wikipedia.org/wiki/Jos_Orno_Imsula_Airport","Moa Island, Leti Islands"
+44572,"KMM","small_airport","Kimaam Airport",-7.9781999588,138.852005005,26,"AS","ID","ID-PA","Kimaam","no",,"KMM",,,,"Kimam, Kimaan, Kiman"
+330319,"MOH","small_airport","Maleo Airport",-2.203333,121.660278,12,"AS","ID","ID-ST","Morowali","yes",,"MOH","MOH","https://en.wikipedia.org/wiki/Maleo_Airport","https://en.wikipedia.org/wiki/Maleo_Airport",
+311151,"NKD","small_airport","Sinak Airport",-3.822,137.8406,7334,"AS","ID","ID-PA","Sinak","no",,"NKD","SIN",,,"WT10"
+3268,"WA1B","small_airport","Aru Airport",-6.57342004776001,134.14700317382812,165,"AS","ID","ID-MA","Fekfetal / Jerdera-Trangan Island","no","WA1B",,"WA1B",,,
+3270,"WA44","small_airport","Maranggo Airport",-5.7645702362061,123.91699981689,169,"AS","ID","ID-SG","Waha-Tomea Island","no","WA44","TQQ","WA44",,"https://id.wikipedia.org/wiki/Bandar_Udara_Maranggo",
+26745,"WAAA","large_airport","Hasanuddin International Airport",-5.061629772186279,119.55400085449219,47,"AS","ID","ID-SN","Ujung Pandang-Celebes Island","yes","WAAA","UPG",,,"http://en.wikipedia.org/wiki/Hasanuddin_International_Airport",
+41409,"WAAG","small_airport","Malimpung Airport",-3.7382,119.7502,124,"AS","ID","ID-SN","Malimpung-Celebes Island","no","WAWG",,,,,"WAAG"
+41410,"WAAI","closed","Malili Airport",-2.63416695595,121.096664429,19,"AS","ID","ID-SN","Malili-Celebes Island","no","WAWI",,,,,"WAAI"
+41411,"WAAJ","small_airport","Tampa Padang Airport",-2.583333,119.033333,49,"AS","ID","ID-SN","Mamuju-Celebes Island","no","WAWJ","MJU",,,"http://en.wikipedia.org/wiki/Tampa_Padang_Airport",
+41412,"WAAL","small_airport","Ponggaluku Airport",-4.3166670799255,122.46666717529,43,"AS","ID","ID-SG","Wawooru-Celebes Island","no","WAWL",,,,,"WAAL"
+41414,"WAAT","small_airport","Makale Airport",-3.10935997963,119.856002808,2711,"AS","ID","ID-SN","Makale-Celebes Island","no","WAAT",,,,,
+26746,"WABB","medium_airport","Frans Kaisiepo Airport",-1.190019965171814,136.10800170898438,46,"AS","ID","ID-PA","Biak-Supiori Island","yes","WABB","BIK",,,"http://en.wikipedia.org/wiki/Frans_Kaisiepo_Airport",
+310163,"WABC","small_airport","Akimuga",-4.6043,137.6576,164,"AS","ID","ID-PA",,"no","WABC",,,,,
+41415,"WABD","small_airport","Moanamani Airport",-3.9834020137786865,136.0832977294922,5204,"AS","ID","ID-PA","Moanamani-Papua Island","no","WABD","ONI",,,,
+41416,"WABG","small_airport","Wagethe Airport",-4.044229984283447,136.2779998779297,5627,"AS","ID","ID-PA","Wagethe-Papua Island","no","WABG","WET",,,,
+26747,"WABI","medium_airport","Nabire Airport",-3.36818,135.496002,20,"AS","ID","ID-PA","Nabire-Papua Island","yes","WABI","NBX",,,"https://en.wikipedia.org/wiki/Nabire_Airport",
+41417,"WABL","small_airport","Illaga Airport",-3.97648,137.6225,7989,"AS","ID","ID-PA","Illaga-Papua Island","no","WABL","ILA",,,,"Ilaga PuncaK airport"
+26749,"WADA","small_airport","Selaparang Airport",-8.560709953309999,116.095001221,52,"AS","ID","ID-NB","Mataram-Lombok Island","no","WADA","AMI",,,"http://en.wikipedia.org/wiki/Selaparang_Airport","WRRA"
+26750,"WADB","small_airport","Muhammad Salahuddin Airport",-8.5396499633789,118.68699645996,3,"AS","ID","ID-NB","Bima-Sumbawa Island","yes","WADB","BMU",,,"http://en.wikipedia.org/wiki/Bima_Airport","WRRB, PBW, Palibelo Airport"
+41426,"WAJL","small_airport","Lereh Airport",-3.0795,139.952,820,"AS","ID","ID-PA","Lereh-Papua Island","no","WAJL","LHI",,,,
+41427,"WAJM","small_airport","Mulia Airport",-3.7018,137.957,6527,"AS","ID","ID-PA","Mulia-Papua Island","no","WABQ","LII",,,,"WAJM"
+41428,"WAJO","small_airport","Oksibil Airport",-4.9071,140.6277,4315,"AS","ID","ID-PA","Oksibil-Papua Island","yes","WAJO","OKL",,,"https://id.wikipedia.org/wiki/Bandar_Udara_Oksibil","Gunung Bintang"
+41429,"WAJR","small_airport","Waris Airport",-3.235,140.994,1500,"AS","ID","ID-PA","Swach","no","WAJR","WAR",,,,
+41430,"WAJS","small_airport","Senggeh Airport",-3.45,140.779,914,"AS","ID","ID-PA","Senggeh","yes","WAJS","SEH",,,,"Senggi"
+41431,"WAJU","small_airport","Ubrub Airport",-3.67565,140.8838,1370,"AS","ID","ID-PA","Ubrub-Papua Island","no","WAJU","UBR",,,,
+26756,"WAJW","medium_airport","Wamena Airport",-4.10251,138.957001,5085,"AS","ID","ID-PA","Wamena-Papua Island","yes","WAJW","WMX",,,"https://en.wikipedia.org/wiki/Wamena_Airport",
+311639,"WAJY","small_airport","Werur/Mar Airport",-0.4198,132.1886,35,"AS","ID","ID-PB","Mar","no","WAJY",,,,,
+41432,"WAKD","small_airport","Mindiptana Airport",-5.75,140.36700439453125,157,"AS","ID","ID-PA","Mindiptana-Papua Island","no","WAKD","MDP",,,,
+41433,"WAKE","small_airport","Bade Airport",-7.714630126953125,139.5749969482422,59,"AS","ID","ID-PA","Bade-Papua Island","no","WAKE","BXD",,,,
+41434,"WAKG","small_airport","Agats Airport",-5.541460037231445,138.13333129882812,17,"AS","ID","ID-PA","Agats-Papua Island","no","WAKG",,,,,
+26757,"WAKK","medium_airport","Mopah Airport",-8.52029037475586,140.41799926757812,10,"AS","ID","ID-PA","Merauke-Papua Island","yes","WAKK","MKQ",,,"http://en.wikipedia.org/wiki/Mopah_Airport",
+41435,"WAKO","small_airport","Okaba Airport",-8.0946,139.7233,23,"AS","ID","ID-PA","Okaba-Papua Island","no","WAKO","OKQ",,,,
+41436,"WAKP","small_airport","Kepi Airport",-6.5418,139.3318,67,"AS","ID","ID-PA","Kepi-Papua Island","no","WAKP","KEI",,,,
+41437,"WAKT","small_airport","Tanah Merah Airport",-6.099219799041748,140.29800415039062,57,"AS","ID","ID-PA","Tanah Merah-Papua Island","no","WAKT","TMH",,,,
+32629,"WALE","small_airport","Melak Airport",-0.203611001372,115.760002136,330,"AS","ID","ID-KI","Melak-Borneo Island","no","WALE",,,,,"WRLE"
+26758,"WALG","small_airport","Tanjung Harapan Airport",2.83583333333,117.373611111,10,"AS","ID","ID-KU","Tanjung Selor-Borneo Island","yes","WALG","TJS",,,"http://en.wikipedia.org/wiki/Tanjung_Harapan_Airport",
+35277,"WALJ","small_airport","Datadawai Airport",0.8106,114.5306,508,"AS","ID","ID-KI","Datadawai-Borneo Island","yes","WALJ","DTD",,,"http://en.wikipedia.org/wiki/Datadawai_Airport",
+26759,"WALK","medium_airport","Kalimarau Airport",2.1555,117.431999,59,"AS","ID","ID-KI","Tanjung Redeb - Borneo Island","yes","WAQT","BEJ",,,"https://en.wikipedia.org/wiki/Kalimarau_Airport","Berau Airport, WALK, WRLK"
+26760,"WALL","small_airport","Sultan Aji Muhamad Sulaiman Airport",-1.26827001572,116.893997192,12,"AS","ID","ID-KI","Kotamadya Balikpapan","yes","WALL","BPN",,"http://sepinggan-airport.com/","http://en.wikipedia.org/wiki/Sultan_Aji_Muhamad_Sulaiman_Airport","WRLL, Balikpapan Airport"
+26761,"WALQ","small_airport","Muara Badak Pujangan Airport",-0.306075006723,117.416000366,49,"AS","ID","ID-KI","Muara Badak-Borneo Island","no","WALQ",,,,,
+26762,"WALR","medium_airport","Juwata Airport",3.326667,117.569444,23,"AS","ID","ID-KU","Tarakan Island","yes","WAQQ","TRK","TRK","http://www.tarakan-airport.com","http://en.wikipedia.org/wiki/Juwata_Airport","WRLR, WALR, WAQQ, TRK, JUWATA, TARAKAN"
+26763,"WALS","medium_airport","Temindung Airport",-0.484530985355,117.156997681,33,"AS","ID","ID-KI","Samarinda","yes","WALS","SRI",,,"http://en.wikipedia.org/wiki/Temindung_Airport","WRLS"
+26764,"WALT","small_airport","Tanjung Santan Airport",-0.0929730013013,117.45300293,121,"AS","ID","ID-KI","Santan-Borneo Island","no","WALT","TSX",,,,"WRLT"
+26765,"WALV","small_airport","Bunyu Airport",3.45571994781,117.866996765,118,"AS","ID","ID-KU","Bunju Island","no","WALV","BYQ","WA1C",,"http://id.wikipedia.org/wiki/Bandar_Udara_Bunyu","WRLV"
+26766,"WALX","small_airport","Mangkajang Airport",2.00750994682,117.749000549,47,"AS","ID","ID-KI","Mangkajang-Borneo Island","no","WALX",,,,,
+31540,"WAMA","small_airport","Gamarmalamo Airport",1.8383300304412842,127.78600311279297,180,"AS","ID","ID-MU","Galela-Celebes Island","no","WAMA","GLX",,,,
+41481,"WRKR","small_airport","David Constantijn Saudale Airport",-10.7673,123.0747,470,"AS","ID","ID-NT","Ba'a - Rote Island","no","WATR","RTI",,"http://rti.otoritasbandara.info/","https://en.wikipedia.org/wiki/David_Constantijn_Saudale_Airport","WRKR, Roti Airport, Lekunik Airport"
+41482,"WRKS","small_airport","Sabu-Tardanu Airport",-10.4924,121.8482,71,"AS","ID","ID-NT","Sabu-Sawu Island","no","WATS","SAU",,,"http://id.wikipedia.org/wiki/Bandar_Udara_Tardamu","WRKS, Tardamu, Sawu"
+41483,"WRLA","small_airport","Sanggata/Sangkimah Airport",0.3847,117.543,60,"AS","ID","ID-KI","Sanggata/Sangkimah","no","WALA","SGQ",,,"http://id.wikipedia.org/wiki/Bandar_Udara_Sangkimah","WRLA, Pertamina"
+35279,"WRLB","small_airport","Long Bawan Airport",3.9028,115.6921,3165,"AS","ID","ID-KU","Long Bawan-Borneo Island","yes","WALB","LBW",,,"http://en.wikipedia.org/wiki/Long_Bawan_Airport","WRLB, Juvai Semaring Airport, Yuvai Semaring, Long Bawang"
+30806,"WRLC","small_airport","Bontang Airport",0.119691,117.474998,49,"AS","ID","ID-KI","Bontang-Borneo Island","yes","WALC","BXT",,,"https://en.wikipedia.org/wiki/PT_Badak_Bontang_Airport","WRLC"
+35281,"WRLF","small_airport","Nunukan Airport",4.13333333333,117.666666667,30,"AS","ID","ID-KU","Nunukan-Nunukan Island","yes","WALF","NNX",,,"http://en.wikipedia.org/wiki/Nunukan_Airport",
+41484,"WRLH","small_airport","Tanah Grogot Airport",-1.91013002396,116.202003479,17,"AS","ID","ID-KI","Tanah Grogot-Borneo Island","no","WRLH","TNB",,,,
+311283,"WRLJ","small_airport","Tanjung Bara Airport",0.5605,117.64435,66,"AS","ID","ID-KI","Sangata","no","WRLJ",,"WRLJ",,"http://id.wikipedia.org/wiki/Bandar_Udara_Tanjung_Bara",
+41485,"WRLL","closed","[Duplicate] Balikpapan Airport",-1.269928,116.891056,8,"AS","ID","ID-KI","Seppingan-Borneo Island","no","WRLL",,,,,
+41486,"WRLM","small_airport","Malinau Airport",3.57514,116.61967,26,"AS","ID","ID-KU","Malinau-Borneo Island","no","WALM",,,,"http://en.wikipedia.org/wiki/Robert_Atty_Bessing_Airport","WRLM"
+41487,"WRLN","small_airport","Long Mawang Airport",1.7992,114.9043,1976,"AS","ID","ID-KU","Long Mawang-Borneo Island","no","WALN",,,,,"WRLN, Long Nawang"
+35278,"WRLP","small_airport","Long Apung Airport",1.704486,114.970297,627,"AS","ID","ID-KU","Long Apung-Borneo Island","yes","WALP","LPU",,,"http://en.wikipedia.org/wiki/Long_Apung_Airport","WRLP"
+41488,"WRLU","small_airport","Sangkulirang Airport",1.00089001656,117.996002197,34,"AS","ID","ID-KI","Sangkulirang-Borneo Island","no","WRLU",,,,,
+307979,"ABE","closed","RAF Calveley",53.113333,-2.603889,,"EU","GB","GB-ENG","Cheshire","no",,,,,"http://en.wikipedia.org/wiki/RAF_Calveley",
+302247,"ABL","closed","RNAS/RAF Calshot",50.8199131549,-1.30677223206,,"EU","GB","GB-ENG","Hampshire","no",,,,,"http://en.wikipedia.org/wiki/RAF_Calshot",
+318235,"AD-0001","heliport","Camí Heliport",42.546257,1.51916,,"EU","AD","AD-04","La Massana","no",,,,,,
+41841,"AD-ALV","heliport","Andorra la Vella Heliport",42.511174,1.533551,3450,"EU","AD","AD-07","Andorra La Vella","no",,"ALV",,,"http://pl.wikipedia.org/wiki/Heliport_Andorra_la_Vella",
+300604,"ADJ","closed","RAF Castletown",58.5847198881,-3.3481693267800003,,"EU","GB","GB-SCT","Caithness","no",,,,,"http://en.wikipedia.org/wiki/RAF_Castletown",
+300646,"AEI","heliport","Algeciras Heliport",36.12888,-5.441118,98,"EU","ES","ES-CA","Algeciras","yes","LEAG","AEI",,"http://www.aena-aeropuertos.es/csee/Satellite/Helipuerto-Algeciras/en/Algeciras.html","http://en.wikipedia.org/wiki/Algeciras_Heliport",
+35356,"AL-0001","closed","Lapraka Heliport",41.333302,19.7913,297,"EU","AL","AL-11","Tirana","no",,,,,,
+325353,"AL-0002","closed","Aeroporti i Korroticës së Ulët",42.6051923,20.9096986,,"EU","AL","AL-U-A","Korroticës së Ulët","no",,,,,,
+325354,"AL-0003","closed","Aeroporti i Mifoit",40.6061798,19.4262538,,"EU","AL","AL-U-A","Mifoit","no",,,,,,
+5,"AL-LA10","closed","Gjirokastër Airport",40.087889,20.151917,666,"EU","AL","AL-05","Gjirokastër","no","LASK",,,,"https://en.wikipedia.org/wiki/Gjirokastër_Airport","LA10"
+43818,"AT-0001","heliport","Pöchlarn-Wörth Heliport",48.214737,15.255424,709,"EU","AT","AT-3","Pöchlarn-Wörth","no","LOAL",,,,,
+46529,"AT-0002","seaplane_base","Scalaria Airchallenge Water Landing Area",47.734705433100004,13.4438323975,,"EU","AT","AT-4","Lake Wolfgang","no",,,,"http://www.airchallenge.scalaria.com/",,
+312150,"AT-0003","heliport","Bad Tatzmannsdorf PVA Hospital Helipad",47.33072,16.22207,1247,"EU","AT","AT-1","Bad Tatzmannsdorf","no",,,,,,
+312153,"AT-0004","heliport","Güssing Hospital Helipad",47.04977,16.3217,731,"EU","AT","AT-1","Güssing","no",,,,,,
+320904,"AT-0005","closed","Retzer Land Heliport",48.7545,15.9622,781,"EU","AT","AT-3","Retz","no",,,,,"https://en.wikipedia.org/wiki/Retzer_Land_Heliport","LOAR"
+329106,"AT-0006","heliport","Christophorus 8 Heliport",47.2089892,9.6598223,,"EU","AT","AT-8",,"no","LOIG",,,,,
+329108,"AT-0007","heliport","Christophorus 15 Heliport",47.9692672,14.9396096,,"EU","AT","AT-3",,"no",,,,,,
+329312,"AT-0008","heliport","Gmünd Heliport",48.78522,14.974763,1594,"EU","AT","AT-3","Gmünd","no","LOBG",,,,,
+43884,"BA-0001","small_airport","Sport airfield Ciljuge",44.438152313232,18.685613632202,725,"EU","BA","BA-BIH","Tuzla","no","LQCG",,,,,
+317425,"BA-0002","small_airport","Sportski Aerodrom Zalužani",44.8482,17.222826,,"EU","BA","BA-BIH","Zalužani","no","LQBZ",,,,,
+321737,"BA-0003","small_airport","Brod Airstrip",44.846235,18.761888,337,"EU","BA","BA-SRP","Brod","no",,,,,,
+43750,"BE-0001","closed","Froidchapelle Glider Field",50.176388,4.352222,902,"EU","BE","BE-WHT","Froidchapelle","no",,,,,,
+43753,"BE-0002","closed","Chimay-Virelles Ulmodrome",50.117778778,4.33055591583,919,"EU","BE","BE-WHT","Chimay","no",,,,,,
+43762,"BE-0003","small_airport","Sovet Airfield",50.28666687,5.04027795791,919,"EU","BE","BE-WNA","Ciney","no",,,,,,
+301715,"BE-0004","heliport","Zomergem Heliport",51.131389,3.522222,66,"EU","BE","BE-VOV",,"no","EBZM",,,,,
+306974,"BE-0005","closed","RAF Castle Camps",52.051389,0.378611,420,"EU","GB","GB-ENG","Cambridgeshire","no",,,,,"http://en.wikipedia.org/wiki/RAF_Castle_Camps",
+311689,"BE-0006","small_airport","[Duplicate] Neerpelt ULM",51.211944,5.478611,148,"EU","BE","BE-VLI",,"no","EBNE",,,,,
+312154,"BE-0007","closed","Imelda Hospital Helipad",51.01767,4.55819,30,"EU","BE","BE-VAN","Bonheiden","no",,,,,,
+323796,"BE-0008","heliport","Brecht/Vochten Heliport",51.332,4.62466,87,"EU","BE","BE-VAN","Brecht","no","EBBV",,,,,
+323798,"BE-0009","closed","Jan Palfijn Hospital Heliport",51.04837,3.700179,,"EU","BE","BE-VOV","Gent","no",,,,,,
+323969,"BE-0010","heliport","Lint Heliport",51.136214,4.47898,36,"EU","BE","BE-VAN","Lint","no","EBLT",,,,,
+323973,"BE-0011","heliport","Neerpelt/Tilburgs Heliport",51.240015,5.417956,,"EU","BE","BE-VLI","Neerpelt","no","EBNP",,,,,
+324445,"BE-0012","balloonport","Céroux-Mousty Ballon Field",50.660241,4.513276,,"EU","BE","BE-WBR","Céroux-Mousty","no",,,,"http://www.europeanballoon.be/fr/site-decollage-place-ceroux-mousty.html",,
+301881,"BER","closed","Berlin Brandenburg Airport (U.C.)",52.351388888900004,13.493888888899999,157,"EU","DE","DE-BR","Berlin","no","EDDB","BER",,"http://preview.berlin-airport.de/en/travellers/","http://en.wikipedia.org/wiki/Berlin_Brandenburg_Airport",
+43886,"BG-0001","closed","Livada Airport",42.456284,27.197334,58,"EU","BG","BG-02","Livada","no",,,,,,
+43888,"BG-0002","closed","Troyanovo Airport",42.56879,27.148243,546,"EU","BG","BG-02","Troyanovo","no",,,,,,
+43889,"BG-0003","small_airport","Trustikovo Airport",42.414634704589844,27.29445457458496,40,"EU","BG","BG-02","Trustikovo","no",,,,,,
+43890,"BG-0004","small_airport","Zagortsi Airport",42.403419494628906,27.07024574279785,368,"EU","BG","BG-02","Zagortsi","no",,,,,,
+43893,"BG-0005","small_airport","Svishtov Airport",43.61817932128906,25.283662796020508,60,"EU","BG","BG-04","Svishtov","no",,,,,,
+43894,"BG-0006","small_airport","Vardim Airport",43.61746597290039,25.52391242980957,60,"EU","BG","BG-04","Svishtov","no",,,,,,
+43895,"BG-0007","small_airport","Glozhene Airport",43.679222106933594,23.796245574951172,177,"EU","BG","BG-06","Glozhene","no",,,,,,
+43896,"BG-0008","small_airport","Kozloduy Airport",43.76313400268555,23.722030639648438,152,"EU","BG","BG-06","Kozloduy","no",,,,,,
+46378,"ZZ-0001","heliport","Sealand Helipad",51.894444,1.4825,40,"EU","GB","GB-ENG","Sealand","no",,,,"http://www.sealandgov.org/","http://en.wikipedia.org/wiki/Principality_of_Sealand","Roughs Tower Helipad"

@@ -8,9 +8,8 @@
 
 namespace WebAppId\Airport\Repositories;
 
-
-use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\QueryException;
+use Illuminate\Pagination\LengthAwarePaginator;
 use WebAppId\Airport\Models\Airport;
 use WebAppId\Airport\Services\Params\AirportParam;
 
@@ -25,7 +24,7 @@ class AirportRepository
      * @param Airport $airport
      * @return Airport|null
      */
-    public function addAirport(AirportParam $airportParam, Airport $airport): ?Airport
+    public function store(AirportParam $airportParam, Airport $airport): ?Airport
     {
         try {
             $airport->id = $airportParam->getId();
@@ -59,7 +58,7 @@ class AirportRepository
      * @param Airport $airport
      * @return Airport|null
      */
-    public function getAirportByIdent(string $ident, Airport $airport): ?Airport
+    public function getByIdent(string $ident, Airport $airport): ?Airport
     {
         return $airport->where('ident', $ident)->first();
     }
@@ -70,9 +69,9 @@ class AirportRepository
      * @param Airport $airport
      * @return Airport|null
      */
-    public function updateAirportByIdent(string $ident, AirportParam $airportParam, Airport $airport): ?Airport
+    public function updateByIdent(string $ident, AirportParam $airportParam, Airport $airport): ?Airport
     {
-        $result = $this->getAirportByIdent($ident, $airport);
+        $result = $this->getByIdent($ident, $airport);
         if ($result != null) {
             try {
                 $result->id = $airportParam->getId();
@@ -99,72 +98,54 @@ class AirportRepository
         }
         return $result;
     }
-    
+
     /**
      * @param string $q
      * @param Airport $airport
+     * @param string $iso_country
      * @param int $paginate
-     * @return object|null
+     * @return LengthAwarePaginator|null
      */
-    public function getAirportLike(string $q, Airport $airport, int $paginate = 12): ?object
+
+    public function getByNameLike(string $q, Airport $airport, ?string $iso_country, int $paginate = 12): ?LengthAwarePaginator
     {
         return $airport
             ->where('name', 'LIKE', '%' . $q . '%')
             ->where('local_code', 'LIKE', '%' . $q . '%')
             ->where('type', 'LIKE', '%_airport')
             ->where('scheduled_service', 'yes')
+            ->when($iso_country != null, function ($query) use ($iso_country) {
+                return $query->where('iso_country', '=', $iso_country);
+            })
             ->paginate($paginate);
     }
-    
-    /**
-     * @param string $countryCode
-     * @param Airport $airport
-     * @return object|null
-     */
-    public function getAllAirportByCountry(string $countryCode, Airport $airport): ?Collection
-    {
-        return $airport
-            ->where('iso_country', $countryCode)
-            ->where('type', 'LIKE', '%_airport')
-            ->where('scheduled_service', 'yes')
-            ->get();
-    }
-    
-    /**
-     * @param string $countryCode
-     * @param Airport $airport
-     * @return int
-     */
-    public function getAllAirportByCountryCount(string $countryCode, Airport $airport): int
-    {
-        return $airport
-            ->where('iso_country', $countryCode)
-            ->where('type', 'LIKE', '%_airport')
-            ->where('scheduled_service', 'yes')
-            ->count();
-    }
-    
+
     /**
      * @param string $q
+     * @param string|null $iso_country
      * @param Airport $airport
      * @return int
      */
-    public function getAirportLikeCount(string $q, Airport $airport): int
+    public function getAllByNameLikeCount(string $q, ?string $iso_country, Airport $airport): int
     {
         return $airport
             ->where('name', 'LIKE', '%' . $q . '%')
             ->where('local_code', 'LIKE', '%' . $q . '%')
             ->where('type', 'LIKE', '%_airport')
             ->where('scheduled_service', 'yes')
+            ->when($iso_country != null, function ($query) use ($iso_country) {
+                return $query->where('iso_country', '=', $iso_country);
+            })
             ->count();
     }
+
     
     /**
      * @param string $iataCode
      * @param Airport $airport
      * @return Airport|null
      */
-    public function getAirportByIataCode(string $iataCode, Airport $airport): ?Airport
+    public function getByIataCode(string $iataCode, Airport $airport): ?Airport
     {
         return $airport->where('iata_code', $iataCode)->first();
     }

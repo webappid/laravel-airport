@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5aa4fbaa13ce448d761951695806b996",
+    "content-hash": "5eb35067f80bfdc7de22c5dd09c88168",
     "packages": [
         {
             "name": "doctrine/cache",
@@ -2851,6 +2851,50 @@
                 "environment"
             ],
             "time": "2019-09-10T21:37:39+00:00"
+        },
+        {
+            "name": "webappid/laravel-ddd",
+            "version": "1.3.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/DyanGalih/laravel-ddd.git",
+                "reference": "d52c05bf97d3fd2c2c75a4947c7866af34a365ee"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DyanGalih/laravel-ddd/zipball/d52c05bf97d3fd2c2c75a4947c7866af34a365ee",
+                "reference": "d52c05bf97d3fd2c2c75a4947c7866af34a365ee",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "illuminate/support": "5.5.*|6.*",
+                "php": ">=7.2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                },
+                "laravel": []
+            },
+            "autoload": {
+                "psr-4": {
+                    "WebAppId\\DDD\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dyan Galih",
+                    "email": "dyan.galih@gmail.com"
+                }
+            ],
+            "description": "Laravel DDD",
+            "time": "2019-12-16T16:34:18+00:00"
         }
     ],
     "packages-dev": [
@@ -4649,7 +4693,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "webappid/laravel-ddd": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

@@ -14,16 +14,28 @@ use Illuminate\Support\Facades\DB;
 use WebAppId\Airport\Repositories\AirportRepository;
 use WebAppId\Airport\Services\Params\AirportParam;
 
+/**
+ * @author: Dyan Galih<dyan.galih@gmail.com>
+ * Date: 07/01/20
+ * Time: 18.07
+ * Class AirportSeeder
+ * @package WebAppId\Airport\Seeds
+ */
 class AirportSeeder extends Seeder
 {
     public function run(AirportRepository $airportRepository, AirportParam $airportParam)
     {
-        $file = __DIR__ . '/../Resources/Csv/Airports.csv';
+        if (!strpos($_SERVER['SCRIPT_NAME'], 'phpunit')) {
+            $file = __DIR__ . '/../Resources/Csv/dummy/Airports.csv';
+        } else {
+            $file = __DIR__ . '/../Resources/Csv/Airports.csv';
+        }
+
         $header = array('id', 'ident', 'type', 'name', 'latitude_deg', 'longitude_deg', 'elevation_ft', 'continent', 'iso_country', 'iso_region', 'municipality', 'scheduled_service', 'gps_code', 'iata_code', 'local_code', 'home_link', 'wikipedia_link', 'keywords');
-        
+
         $delimiter = ',';
         if (file_exists($file) || is_readable($file)) {
-            
+
             if (($handle = fopen($file, 'r')) !== false) {
                 DB::beginTransaction();
                 while (($row = fgetcsv($handle, 1000, $delimiter)) !== false) {
@@ -34,7 +46,7 @@ class AirportSeeder extends Seeder
                             $data['elevation_ft'] = 0;
                         }
 
-                        $result = $this->container->call([$airportRepository,'getAirportByIdent'],['ident' => $data['ident']]);
+                        $result = $this->container->call([$airportRepository, 'getAirportByIdent'], ['ident' => $data['ident']]);
 
                         $airportParam->setId($data['id']);
                         $airportParam->setIdent($data['ident']);
@@ -55,11 +67,11 @@ class AirportSeeder extends Seeder
                         $airportParam->setWikipediaLink($data['wikipedia_link']);
                         $airportParam->setKeywords($data['keywords']);
 
-                        if($result == null) {
+                        if ($result == null) {
 
                             $this->container->call([$airportRepository, 'addAirport'], ['airportParam' => $airportParam]);
-                        }else{
-                            $this->container->call([$airportRepository,'updateAirportByIdent'],['ident' => $data['ident'], 'airportParam' => $airportParam]);
+                        } else {
+                            $this->container->call([$airportRepository, 'updateAirportByIdent'], ['ident' => $data['ident'], 'airportParam' => $airportParam]);
                         }
                     }
                 }
