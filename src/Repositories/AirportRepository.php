@@ -102,39 +102,38 @@ class AirportRepository
     /**
      * @param string $q
      * @param Airport $airport
-     * @param string $iso_country
+     * @param string $isoCountry
      * @param int $paginate
      * @return LengthAwarePaginator|null
      */
 
-    public function getByNameLike(string $q, Airport $airport, ?string $iso_country, int $paginate = 12): ?LengthAwarePaginator
+    public function getByNameLike(string $q, Airport $airport, ?string $isoCountry, int $paginate = 12): ?LengthAwarePaginator
     {
         return $airport
             ->where('name', 'LIKE', '%' . $q . '%')
-            ->where('local_code', 'LIKE', '%' . $q . '%')
+            ->orWhere('local_code', 'LIKE', '%' . $q . '%')
             ->where('type', 'LIKE', '%_airport')
             ->where('scheduled_service', 'yes')
-            ->when($iso_country != null, function ($query) use ($iso_country) {
-                return $query->where('iso_country', '=', $iso_country);
+            ->when($isoCountry != null, function ($query) use ($isoCountry) {
+                return $query->where('iso_country', '=', $isoCountry);
             })
             ->paginate($paginate);
     }
 
     /**
      * @param string $q
-     * @param string|null $iso_country
+     * @param string|null $isoCountry
      * @param Airport $airport
      * @return int
      */
-    public function getAllByNameLikeCount(string $q, ?string $iso_country, Airport $airport): int
+    public function getAllByNameLikeCount(string $q, ?string $isoCountry, Airport $airport): int
     {
         return $airport
             ->where('name', 'LIKE', '%' . $q . '%')
-            ->where('local_code', 'LIKE', '%' . $q . '%')
             ->where('type', 'LIKE', '%_airport')
             ->where('scheduled_service', 'yes')
-            ->when($iso_country != null, function ($query) use ($iso_country) {
-                return $query->where('iso_country', '=', $iso_country);
+            ->when($isoCountry != null, function ($query) use ($isoCountry) {
+                return $query->where('iso_country', '=', $isoCountry);
             })
             ->count();
     }

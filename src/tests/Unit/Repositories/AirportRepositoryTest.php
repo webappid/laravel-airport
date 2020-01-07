@@ -71,7 +71,7 @@ class AirportRepositoryTest extends TestCase
     
     private function createData($dummy)
     {
-        return $this->getContainer()->call([$this->airportRepository, 'addAirport'], ['airportParam' => $dummy]);
+        return $this->getContainer()->call([$this->airportRepository, 'store'], ['airportParam' => $dummy]);
     }
     
     public function testAddRepository(): ?Airport
@@ -104,7 +104,7 @@ class AirportRepositoryTest extends TestCase
     public function testFindAirportByIdent()
     {
         $data = $this->testAddRepository();
-        $result = $this->getContainer()->call([$this->airportRepository, 'getAirportByIdent'], ['ident' => $data->ident]);
+        $result = $this->getContainer()->call([$this->airportRepository, 'getByIdent'], ['ident' => $data->ident]);
         self::assertNotEquals(null, $result);
     }
     
@@ -113,7 +113,7 @@ class AirportRepositoryTest extends TestCase
         $data = $this->testAddRepository();
         $newData = $this->dummyData($this->getFaker()->randomNumber());
         $newData->setIdent($data->ident);
-        $result = $this->getContainer()->call([$this->airportRepository, 'updateAirportByIdent'], ['ident' => $data->ident, 'airportParam' => $newData]);
+        $result = $this->getContainer()->call([$this->airportRepository, 'updateByIdent'], ['ident' => $data->ident, 'airportParam' => $newData]);
         
         self::assertNotEquals(null, $result);
         self::assertEquals($newData->getId(), $result->id);
@@ -158,13 +158,9 @@ class AirportRepositoryTest extends TestCase
         
         $randomIndexKey = $this->getFaker()->numberBetween(0, count($key) - 1);
         
-        $count = $this->getContainer()->call([$this->airportRepository,'getAllByNameLikeCount'], ['q' => $key[$randomIndexKey]]);
+        $count = $this->getContainer()->call([$this->airportRepository,'getByNameLike'], ['q' => $key[$randomIndexKey]]);
     
         self::assertGreaterThanOrEqual(1, $count);
-        
-        $result = $this->getContainer()->call([$this->airportRepository, 'getByNameLike'], ['q' => $key[$randomIndexKey]]);
-        
-        self::assertGreaterThanOrEqual(1, count($result));
     }
     
     public function testGetAllAirportByCountry()

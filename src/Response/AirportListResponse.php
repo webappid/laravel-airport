@@ -5,7 +5,7 @@ namespace WebAppId\Airport\Response;
 
 
 use Illuminate\Database\Eloquent\Collection;
-use WebAppId\DDD\Controllers\BaseController;
+use WebAppId\DDD\Responses\AbstractResponse;
 
 /**
  * @author: Dyan Galih<dyan.galih@gmail.com>
@@ -14,7 +14,7 @@ use WebAppId\DDD\Controllers\BaseController;
  * Class AirportListResponse
  * @package WebAppId\Airport\Response
  */
-class AirportListResponse extends BaseController
+class AirportListResponse extends AbstractResponse
 {
     /**
      * @var Collection

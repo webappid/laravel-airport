@@ -13,39 +13,34 @@ use Illuminate\Container\Container;
 use Illuminate\Database\Eloquent\Collection;
 use WebAppId\Airport\Repositories\AirportRepository;
 use WebAppId\Airport\Response\AirportListResponse;
+use WebAppId\DDD\Services\BaseService;
 
 
 /**
  * Class AirportService
  * @package WebAppId\Airport\Tests\Feature\Services
  */
-class AirportService
+class AirportService extends BaseService
 {
-    private $container;
-    
-    public function __construct(Container $container)
-    {
-        return $this->container = $container;
-    }
 
     /**
      * @param string $q
      * @param AirportRepository $airportRepository
-     * @param bool $status
+     * @param AirportListResponse $airportListResponse
+     * @param string|null $isoCountry
      * @return AirportListResponse|null
      */
-    public function getAirportLike(string $q, AirportRepository $airportRepository, bool $status = true): ?AirportListResponse
+    public function getByNameLike(string $q, AirportRepository $airportRepository, AirportListResponse $airportListResponse, string $isoCountry = null): ?AirportListResponse
     {
-        return $this->container->call([$airportRepository, 'getAirportLike'], ['q' => $q, 'status' => $status]);
-    }
-    
-    /**
-     * @param string $countryCode
-     * @param AirportRepository $airportRepository
-     * @return Collection|null
-     */
-    public function getAllAirportByCountry(string $countryCode, AirportRepository $airportRepository): ?Collection
-    {
-        return $this->container->call([$airportRepository, 'getAllAirportByCountry'], ['countryCode' => $countryCode]);
+        $result = $this->getContainer()->call([$airportRepository, 'getByNameLike'], ['q' => $q, 'isoCountry' => $isoCountry]);
+        if (count($result) > 0) {
+            $airportListResponse->setStatus(true);
+            $airportListResponse->setMessage('Data Found');
+            $airportListResponse->airportList = $result;
+        } else {
+            $airportListResponse->setStatus(false);
+            $airportListResponse->setMessage('Data Not Found');
+        }
+        return $airportListResponse;
     }
 }

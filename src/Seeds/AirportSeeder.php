@@ -25,7 +25,7 @@ class AirportSeeder extends Seeder
 {
     public function run(AirportRepository $airportRepository, AirportParam $airportParam)
     {
-        if (!strpos($_SERVER['SCRIPT_NAME'], 'phpunit')) {
+        if (strpos($_SERVER['SCRIPT_NAME'], 'phpunit')) {
             $file = __DIR__ . '/../Resources/Csv/dummy/Airports.csv';
         } else {
             $file = __DIR__ . '/../Resources/Csv/Airports.csv';
@@ -46,7 +46,7 @@ class AirportSeeder extends Seeder
                             $data['elevation_ft'] = 0;
                         }
 
-                        $result = $this->container->call([$airportRepository, 'getAirportByIdent'], ['ident' => $data['ident']]);
+                        $result = $this->container->call([$airportRepository, 'getByIdent'], ['ident' => $data['ident']]);
 
                         $airportParam->setId($data['id']);
                         $airportParam->setIdent($data['ident']);
@@ -69,9 +69,9 @@ class AirportSeeder extends Seeder
 
                         if ($result == null) {
 
-                            $this->container->call([$airportRepository, 'addAirport'], ['airportParam' => $airportParam]);
+                            $this->container->call([$airportRepository, 'store'], ['airportParam' => $airportParam]);
                         } else {
-                            $this->container->call([$airportRepository, 'updateAirportByIdent'], ['ident' => $data['ident'], 'airportParam' => $airportParam]);
+                            $this->container->call([$airportRepository, 'updateByIdent'], ['ident' => $data['ident'], 'airportParam' => $airportParam]);
                         }
                     }
                 }
