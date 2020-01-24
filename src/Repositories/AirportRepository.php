@@ -110,8 +110,11 @@ class AirportRepository
     public function getByNameLike(string $q, Airport $airport, ?string $isoCountry, int $paginate = 12): ?LengthAwarePaginator
     {
         return $airport
-            ->where('name', 'LIKE', '%' . $q . '%')
-            ->orWhere('local_code', 'LIKE', '%' . $q . '%')
+            ->where(function ($query) use ($q) {
+                return $query
+                    ->where('name', 'LIKE', '%' . $q . '%')
+                    ->orWhere('iata_code', 'LIKE', '%' . $q . '%');
+            })
             ->where('type', 'LIKE', '%_airport')
             ->where('scheduled_service', 'yes')
             ->when($isoCountry != null, function ($query) use ($isoCountry) {
@@ -129,7 +132,11 @@ class AirportRepository
     public function getAllByNameLikeCount(string $q, ?string $isoCountry, Airport $airport): int
     {
         return $airport
-            ->where('name', 'LIKE', '%' . $q . '%')
+            ->where(function ($query) use ($q) {
+                return $query
+                    ->where('name', 'LIKE', '%' . $q . '%')
+                    ->orWhere('iata_code', 'LIKE', '%' . $q . '%');
+            })
             ->where('type', 'LIKE', '%_airport')
             ->where('scheduled_service', 'yes')
             ->when($isoCountry != null, function ($query) use ($isoCountry) {
